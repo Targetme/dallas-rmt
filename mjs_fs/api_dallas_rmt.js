@@ -10,7 +10,7 @@ let DallasRmt = {
     _begin: ffi('void mgos_dallas_rmt_begin(void *)'),
     _gdc: ffi('int mgos_dallas_rmt_get_device_count(void *)'),
     _va: ffi('int mgos_dallas_rmt_valid_address(void *, char *)'),
-    _vf: ffi('int mgos_dallas_rmt_valid_family(void *, char *)'),
+    // _vf: ffi('int mgos_dallas_rmt_valid_family(void *, char *)'),
     _ga: ffi('int mgos_dallas_rmt_get_address(void *, char *, int)'),
     _isc: ffi('int mgos_dallas_rmt_is_connected(void *, char *)'),
     _iscsp: ffi('int mgos_dallas_rmt_is_connected_sp(void *, char *, char *)'),
@@ -92,9 +92,9 @@ let DallasRmt = {
         // ## **`myDT.validFamily(addr)`**
         // Return 1 if onewire address `addr` (8-byte string) is of the family of
         // sensors the lib supports.  Return always 0 if an operaiton failed.
-        validFamily: function (addr) {
-            return DallasRmt._vf(this.dt, addr);
-        },
+//         validFamily: function (addr) {
+//             return DallasRmt._vf(this.dt, addr);
+//         },
 
         // ## **`myDT.getAddress(addr, idx)`**
         // Find an onewire address at a given index `idx` on the bus. Resulting
