@@ -93,20 +93,20 @@ bool DallasRmt::validAddress(const uint8_t *deviceAddress) {
   return (_ow->crc8(deviceAddress, 7) == deviceAddress[7]);
 }
 
-bool DallasRmt::validFamily(const uint8_t *deviceAddress) {
-  bool ret;
-  switch (deviceAddress[0]) {
-    case DS18S20MODEL:
-    case DS18B20MODEL:
-    case DS1822MODEL:
-    case DS1825MODEL:
-    case DS28EA00MODEL:
-      ret = true;
-    default:
-      ret = false;
-  }
-  return ret;
-}
+// bool DallasRmt::validFamily(const uint8_t *deviceAddress) {
+//   bool ret;
+//   switch (deviceAddress[0]) {
+//     case DS18S20MODEL:
+//     case DS18B20MODEL:
+//     case DS1822MODEL:
+//     case DS1825MODEL:
+//     case DS28EA00MODEL:
+//       ret = true;
+//     default:
+//       ret = false;
+//   }
+//   return ret;
+// }
 
 // finds an address at a given index on the bus
 // returns true if the device was found
