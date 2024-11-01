@@ -52,7 +52,7 @@ bool mgos_dallas_rmt_valid_address(DallasRmt *dt, const char *addr);
  * Returns true if address is of the family of sensors the lib supports.
  * Return always false if an operaiton failed.
  */
-bool mgos_dallas_rmt_valid_family(DallasRmt *dt, const char *addr);
+// bool mgos_dallas_rmt_valid_family(DallasRmt *dt, const char *addr);
 
 /*
  * Finds an address at a given index on the bus.
