@@ -34,10 +34,10 @@ bool mgos_dallas_rmt_valid_address(DallasRmt *dt, const char *addr) {
   return dt->validAddress((uint8_t *) addr);
 }
 
-bool mgos_dallas_rmt_valid_family(DallasRmt *dt, const char *addr) {
-  if (dt == nullptr) return false;
-  return dt->validFamily((uint8_t *) addr);
-}
+// bool mgos_dallas_rmt_valid_family(DallasRmt *dt, const char *addr) {
+//   if (dt == nullptr) return false;
+//   return dt->validFamily((uint8_t *) addr);
+// }
 
 bool mgos_dallas_rmt_get_address(DallasRmt *dt, char *addr, int idx) {
   if (dt == nullptr) return false;
