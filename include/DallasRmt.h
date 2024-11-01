@@ -47,7 +47,7 @@ class DallasRmt {
   /*
    * Returns true if address is of the family of sensors the lib supports.
    */
-  bool validFamily(const uint8_t *deviceAddress);
+  // bool validFamily(const uint8_t *deviceAddress);
 
   /*
    * Finds an address at a given index on the bus
